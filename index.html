@@ -91,7 +91,7 @@
     }
 
     .clock-card {
-      margin-top: 80px; /* Disesuaikan karena ada top-bar */
+      margin-top: 80px;
       margin-bottom: 5px;
       padding: 12px 30px;
       background: rgba(10, 15, 30, 0.75);
@@ -203,9 +203,6 @@
       display: none !important;
     }
 
-    /* ========================================================= */
-    /* TAMBAHAN BARU: STYLING IFRAME & MODAL UNTUK GOOGLE FORM   */
-    /* ========================================================= */
     #exam-modal {
       position: fixed;
       top: 0;
@@ -274,10 +271,9 @@
       border: none;
     }
 
-    /* Responsiveness */
     @media (max-width: 600px) {
       .subject-box {
-        max-width: 100%; /* Full width di HP */
+        max-width: 100%;
         height: 70px;
       }
       .top-bar { padding: 15px; }
@@ -296,7 +292,6 @@
       <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/></svg>
       <span id="student-name">Peserta Ujian</span>
     </div>
-    <!-- Ganti href dengan URL portal login awal Anda -->
     <a href="#" class="logout-btn" onclick="logout()">Keluar</a>
   </div>
 
@@ -309,92 +304,24 @@
   <h1>JADWAL UJIAN KELAS 7</h1>
 
   <div class="container">
-    <!-- Format Tanggal: YYYY-MM-DDTHH:MM:SS -->
-    <!-- Disesuaikan ke hari ini agar bisa di-test -->
-    <a class="subject-box hidden" 
-       href="https://forms.gle/BphuqKWEwJPbFjoLA" 
-       data-release="2026-09-17T10:00:00" 
-       data-expire="2026-09-20T18:00:00">UJI COBA</a>
-
-    <a class="subject-box hidden" 
-       href="https://forms.gle/WiSoYHcYX771a8ye6" 
-       data-release="2026-09-23T11:00:00" 
-       data-expire="2026-09-23T15:00:00">BAHASA INDONESIA</a>
-    
-    <a class="subject-box hidden" 
-       href="https://forms.gle/4dqsnSmhntBYHQRc6" 
-       data-release="2026-09-23T11:00:00" 
-       data-expire="2026-09-23T15:00:00">PAI</a>
-
-    <a class="subject-box hidden" 
-       href="https://forms.gle/4nkSPj4QNFRKBpMq9" 
-       data-release="2026-09-23T11:00:00" 
-       data-expire="2026-09-23T15:00:00">MATEMATIKA</a>
-
-    <a class="subject-box hidden" 
-       href="https://forms.gle/4bCYr17A8q2KpChUA" 
-       data-release="2026-09-23T11:00:00" 
-       data-expire="2026-09-23T15:00:00">BAHASA JAWA</a>    
-
-    <a class="subject-box hidden" 
-       href="https://forms.gle/pzzdSAGpfVx3g9as6" 
-       data-release="2026-09-23T07:20:00" 
-       data-expire="2026-09-23T15:00:00">IPA</a>    
-
-    <a class="subject-box hidden" 
-       href="https://forms.gle/KQk14Z2TxnTXa66S8" 
-       data-release="2025-09-23T09:20:00" 
-       data-expire="2025-09-23T15:00:00">KEMUHAMMADIYAHAN</a>    
-    
-    <a class="subject-box hidden" 
-       href="https://..." 
-       data-release="2026-09-24T07:20:00" 
-       data-expire="2026-09-24T15:00:00">BAHASA INGGRIS</a>    
-
-    <a class="subject-box hidden" 
-       href="https://..." 
-       data-release="2026-09-24T09:20:00" 
-       data-expire="2026-09-24T15:00:00">PENDIDIKAN PANCASILA</a>    
-    
-    <a class="subject-box hidden" 
-       href="https://..." 
-       data-release="2026-09-25T07:20:00" 
-       data-expire="2026-09-25T15:00:00">IPS</a> 
-    
-    <a class="subject-box hidden" 
-       href="https://..." 
-       data-release="2026-09-25T09:20:00" 
-       data-expire="2026-09-25T15:00:00">INFORMATIKA</a>    
-
-    <a class="subject-box hidden" 
-       href="https://..." 
-       data-release="2026-09-28T07:20:00" 
-       data-expire="2026-09-28T15:00:00">PJOK</a>
-    
-    <a class="subject-box hidden" 
-       href="https://..." 
-       data-release="2026-09-28T09:20:00" 
-       data-expire="2026-09-28T15:00:00">BAHASA ARAB</a>    
-    
-    <a class="subject-box hidden" 
-       href="https://..." 
-       data-release="2026-09-29T07:20:00" 
-       data-expire="2026-09-29T15:00:00">SENI RUPA</a>
-    
-    <a class="subject-box hidden" 
-       href="https://..." 
-       data-release="2026-06-29T09:10:00" 
-       data-expire="2026-06-29T15:00:00">SENI MUSIK</a>
-    
-    <a class="subject-box hidden" 
-       href="https://..." 
-       data-release="2026-06-29T10:40:00" 
-       data-expire="2026-06-29T15:00:00">KKA</a>
+    <a class="subject-box hidden" href="https://forms.gle/BphuqKWEwJPbFjoLA" data-release="2026-09-17T10:00:00" data-expire="2026-09-20T18:00:00">UJI COBA</a>
+    <a class="subject-box hidden" href="https://forms.gle/WiSoYHcYX771a8ye6" data-release="2026-09-23T11:00:00" data-expire="2026-09-23T15:00:00">BAHASA INDONESIA</a>
+    <a class="subject-box hidden" href="https://forms.gle/4dqsnSmhntBYHQRc6" data-release="2026-09-23T11:00:00" data-expire="2026-09-23T15:00:00">PAI</a>
+    <a class="subject-box hidden" href="https://forms.gle/4nkSPj4QNFRKBpMq9" data-release="2026-09-23T11:00:00" data-expire="2026-09-23T15:00:00">MATEMATIKA</a>
+    <a class="subject-box hidden" href="https://forms.gle/4bCYr17A8q2KpChUA" data-release="2026-09-23T11:00:00" data-expire="2026-09-23T15:00:00">BAHASA JAWA</a>    
+    <a class="subject-box hidden" href="https://forms.gle/pzzdSAGpfVx3g9as6" data-release="2026-09-23T07:20:00" data-expire="2026-09-23T15:00:00">IPA</a>    
+    <a class="subject-box hidden" href="https://forms.gle/KQk14Z2TxnTXa66S8" data-release="2025-09-23T09:20:00" data-expire="2025-09-23T15:00:00">KEMUHAMMADIYAHAN</a>    
+    <a class="subject-box hidden" href="https://..." data-release="2026-09-24T07:20:00" data-expire="2026-09-24T15:00:00">BAHASA INGGRIS</a>    
+    <a class="subject-box hidden" href="https://..." data-release="2026-09-24T09:20:00" data-expire="2026-09-24T15:00:00">PENDIDIKAN PANCASILA</a>    
+    <a class="subject-box hidden" href="https://..." data-release="2026-09-25T07:20:00" data-expire="2026-09-25T15:00:00">IPS</a> 
+    <a class="subject-box hidden" href="https://..." data-release="2026-09-25T09:20:00" data-expire="2026-09-25T15:00:00">INFORMATIKA</a>    
+    <a class="subject-box hidden" href="https://..." data-release="2026-09-28T07:20:00" data-expire="2026-09-28T15:00:00">PJOK</a>
+    <a class="subject-box hidden" href="https://..." data-release="2026-09-28T09:20:00" data-expire="2026-09-28T15:00:00">BAHASA ARAB</a>    
+    <a class="subject-box hidden" href="https://..." data-release="2026-09-29T07:20:00" data-expire="2026-09-29T15:00:00">SENI RUPA</a>
+    <a class="subject-box hidden" href="https://..." data-release="2026-06-29T09:10:00" data-expire="2026-06-29T15:00:00">SENI MUSIK</a>
+    <a class="subject-box hidden" href="https://..." data-release="2026-06-29T10:40:00" data-expire="2026-06-29T15:00:00">KKA</a>
   </div>
 
-  <!-- ========================================================= -->
-  <!-- TAMBAHAN BARU: ELEMENT LAYAR MODAL / IFRAME GOOGLE FORM  -->
-  <!-- ========================================================= -->
   <div id="exam-modal" class="hidden">
     <div class="exam-header">
       <div class="exam-title-badge" id="exam-title-display">UJIAN ONLINE</div>
@@ -409,15 +336,17 @@
   </div>
 
   <script>
-    // --- Autentikasi Sederhana ---
     document.addEventListener("DOMContentLoaded", () => {
-      // Mengambil nama dari Session Storage
+      // Mengambil nama dari Session Storage yang dikirimkan saat login berhasil
       const nama = sessionStorage.getItem("userNama");
       if (nama) {
-        document.getElementById("student-name").textContent = nama;
+        const nameElement = document.getElementById("student-name");
+        if (nameElement) {
+          nameElement.textContent = nama;
+        }
       }
 
-      // TAMBAHAN: Mencegah link mapel membuka tab baru, ubah ke modal iframe[cite: 1]
+      // Mencegah link mapel membuka tab baru, ubah ke modal iframe
       const subjectLinks = document.querySelectorAll('.subject-box');
       subjectLinks.forEach(link => {
         link.addEventListener('click', (e) => {
@@ -429,26 +358,29 @@
           }
         });
       });
+
+      updateLiveClock();
+      updateSubjectLinks();
+      setInterval(updateLiveClock, 1000);
+      setInterval(updateSubjectLinks, 5000);
     });
 
-    // =========================================================
-    // TAMBAHAN BARU: FUNGSI MEMBUKA & MENUTUP FORM DALAM MODAL
-    // =========================================================
     function openExamModal(url, title) {
       const modal = document.getElementById('exam-modal');
       const iframe = document.getElementById('exam-iframe');
       const titleDisplay = document.getElementById('exam-title-display');
 
-      titleDisplay.textContent = title;
+      if (titleDisplay) {
+        titleDisplay.textContent = title;
+      }
       
-      // Mengubah URL ke format embedded jika merupakan link viewform / forms.gle[cite: 1]
       let embedUrl = url;
       if (embedUrl.includes('docs.google.com/forms') && !embedUrl.includes('embedded=true')) {
         embedUrl += (embedUrl.includes('?') ? '&' : '?') + 'embedded=true';
       }
 
-      iframe.src = embedUrl;
-      modal.classList.remove('hidden');
+      if (iframe) iframe.src = embedUrl;
+      if (modal) modal.classList.remove('hidden');
     }
 
     function closeExamModal() {
@@ -456,20 +388,18 @@
       const iframe = document.getElementById('exam-iframe');
       
       if (confirm("Apakah Anda yakin ingin keluar dari lembar ujian dan kembali ke jadwal?")) {
-        iframe.src = "";
-        modal.classList.add('hidden');
+        if (iframe) iframe.src = "";
+        if (modal) modal.classList.add('hidden');
       }
     }
 
     function logout() {
       if (confirm("Apakah Anda yakin ingin keluar/logout dari aplikasi?")) {
         sessionStorage.removeItem("userNama");
-        // Redirect ke halaman login utama Anda
         window.location.href = "https://ekosantoso411-pixel.github.io/halaman-login/"; 
       }
     }
 
-    // --- Logic for updating real-time live clock ---
     function updateLiveClock() {
       const now = new Date();
       const hours = String(now.getHours()).padStart(2, '0');
@@ -488,39 +418,36 @@
       }
     }
 
-    // --- Logic for showing/hiding links based on time ---
     function updateSubjectLinks() {
       const now = new Date();
       const links = document.querySelectorAll('.subject-box');
 
       links.forEach(link => {
-        const releaseTime = new Date(link.getAttribute('data-release'));
-        const expireTime = new Date(link.getAttribute('data-expire'));
+        const releaseTimeAttr = link.getAttribute('data-release');
+        const expireTimeAttr = link.getAttribute('data-expire');
+        
+        if (releaseTimeAttr && expireTimeAttr) {
+          const releaseTime = new Date(releaseTimeAttr);
+          const expireTime = new Date(expireTimeAttr);
 
-        if (now >= releaseTime && now < expireTime) {
-          link.classList.remove('hidden');
-        } else {
-          link.classList.add('hidden');
+          if (now >= releaseTime && now < expireTime) {
+            link.classList.remove('hidden');
+          } else {
+            link.classList.add('hidden');
+          }
         }
       });
     }
 
-    document.addEventListener("DOMContentLoaded", () => {
-      updateLiveClock();
-      updateSubjectLinks();
-      setInterval(updateLiveClock, 1000);
-      setInterval(updateSubjectLinks, 5000); // Cek link tiap 5 detik
-    });
-
-    // --- STREAMING_CHUNK:Initializing Canvas Animation... ---
     const canvas = document.getElementById('background-canvas');
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas ? canvas.getContext('2d') : null;
     
     let width, height;
     let particles = [];
     const connectionDistance = 150;
 
     function resizeCanvas() {
+      if (!canvas) return;
       width = window.innerWidth;
       height = window.innerHeight;
       canvas.width = width;
@@ -542,9 +469,9 @@
         if (this.y < 0 || this.y > height) this.vy *= -1;
       }
       draw() {
+        if (!ctx) return;
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        // Sesuaikan warna partikel dengan tema Kelas 7
         ctx.fillStyle = 'rgba(0, 195, 255, 0.8)';
         ctx.fill();
       }
@@ -559,6 +486,7 @@
     }
 
     function drawConnections() {
+      if (!ctx) return;
       for (let a = 0; a < particles.length; a++) {
         for (let b = a; b < particles.length; b++) {
           let dx = particles[a].x - particles[b].x;
@@ -570,7 +498,6 @@
             ctx.moveTo(particles[a].x, particles[a].y);
             ctx.lineTo(particles[b].x, particles[b].y);
             let opacity = 1 - (distance / connectionDistance);
-            // Sesuaikan warna koneksi
             ctx.strokeStyle = `rgba(0, 195, 255, ${opacity * 0.3})`;
             ctx.lineWidth = 1;
             ctx.stroke();
@@ -580,22 +507,24 @@
     }
 
     function drawGrid() {
-        ctx.strokeStyle = 'rgba(255, 255, 255, 0.02)';
-        ctx.lineWidth = 1;
-        const gridSize = 50;
-        ctx.beginPath();
-        for (let x = 0; x <= width; x += gridSize) {
-            ctx.moveTo(x, 0);
-            ctx.lineTo(x, height);
-        }
-        for (let y = 0; y <= height; y += gridSize) {
-            ctx.moveTo(0, y);
-            ctx.lineTo(width, height);
-        }
-        ctx.stroke();
+      if (!ctx) return;
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.02)';
+      ctx.lineWidth = 1;
+      const gridSize = 50;
+      ctx.beginPath();
+      for (let x = 0; x <= width; x += gridSize) {
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, height);
+      }
+      for (let y = 0; y <= height; y += gridSize) {
+        ctx.moveTo(0, y);
+        ctx.lineTo(width, height);
+      }
+      ctx.stroke();
     }
 
     function animate() {
+      if (!ctx) return;
       requestAnimationFrame(animate);
       ctx.clearRect(0, 0, width, height);
       drawGrid();
